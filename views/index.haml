@@ -37,13 +37,13 @@
       %p
         %b=@hostname
 
-      %h3 Environment variables:
-      %ul
-        - @env_vars.each do |index, value|
-          %li
-            %code=index
-            \:
-            %code=value
+      /%h3 Environment variables:
+      /%ul
+      /  - @env_vars.each do |index, value|
+      /    %li
+      /      %code=index
+      /      \:
+      /      %code=value
 
       %footer.footer
         %p &copy; Cloudgear 2015
