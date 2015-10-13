@@ -1,0 +1,13 @@
+demoapp:
+  build: .
+  ports:
+   - "3000:3000"
+  environment:
+    REDIS_PORT: 6379
+  links:
+    - redis
+
+redis:
+  image: redis:3.0.1
+  ports:
+   - "6379:6379"
