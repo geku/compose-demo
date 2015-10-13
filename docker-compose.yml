@@ -4,6 +4,9 @@ demoapp:
    - "3000:3000"
   environment:
     REDIS_PORT: 6379
+  labels:
+    HTTP_ROUTE: true
+    DOMAINS: demo1.cloudray.net
   links:
     - redis
 
